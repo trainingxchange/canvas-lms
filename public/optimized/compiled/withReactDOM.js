@@ -1,0 +1,1 @@
+(function(){define(["react"],function(n){var i;return i=function(i){return function(){var r,t,o,u,e,f;r={},e=n.DOM;for(u in e)o=e[u],r[u]=window[u],window[u]=o;t=i.apply(this,arguments),f=n.DOM;for(u in f)o=f[u],window[u]=r[u];return t}}})}).call(this);

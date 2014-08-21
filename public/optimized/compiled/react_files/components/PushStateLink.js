@@ -1,0 +1,1 @@
+(function(){define(["react","../utils/withGlobalDom"],function(n){var t;return t=n.createClass({handleClick:function(n){return n.preventDefault(),window.history.replaceState(null,null,this.props.href)},render:function(){return this.transferPropsTo(n.DOM.a({onClick:this.handleClick},this.props.children))}})})}).call(this);

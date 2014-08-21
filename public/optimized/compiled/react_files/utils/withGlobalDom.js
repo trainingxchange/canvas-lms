@@ -1,0 +1,1 @@
+(function(){define(["react"],function(n){var t,r,i;return r=this,t=!1,i=function(i){return function(){var e,u,a;if(t)return i.apply(this,arguments);u={};for(e in n.DOM)e in r&&(u[e]=r[e]),r[e]=n.DOM[e];t=!0,a=i.apply(this,arguments);for(e in n.DOM)e in u?r[e]=u[e]:delete r[e];return t=!1,a}}})}).call(this);

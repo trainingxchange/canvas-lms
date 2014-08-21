@@ -1,0 +1,1 @@
+(function(){define(["i18n!react_files","react"],function(e,i){var a;return a=i.createClass({render:function(){var a;return a={},this.props.isLoading||(a.display="none"),i.DOM.div({style:a,className:"paginatedView-loading",role:"status","aria-live":"polite"},e.t("loading_more_results","Loading more results"))}})})}).call(this);

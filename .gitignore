@@ -22,14 +22,6 @@
 /db/*sql
 /exports/
 /log/
-/public/app/
-/public/assets/
-/public/doc/api/
-/public/javascripts/compiled/
-/public/javascripts/jst/
-/public/javascripts/translations/
-/public/optimized/
-/public/stylesheets_compiled/
 /config/RAILS3
 /spec/javascripts/runner.html
 /spec/javascripts/tests.js

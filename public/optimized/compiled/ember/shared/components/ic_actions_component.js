@@ -1,0 +1,1 @@
+(function(){define(["ember","../register","i18n!ic_actions","ic-menu","../templates/components/ic-actions","../templates/components/ic-actions-css"],function(n,t,e){return t("component","ic-actions",n.Component.extend({tagName:"ic-actions",title:e.t("manage","manage")}))})}).call(this);
