@@ -14,7 +14,6 @@
 /.yardoc/
 /app/coffeescripts/ember/*/main.coffee
 /app/views/info/styleguide.html.erb
-/config/*.yml
 /config/build.js
 /config/environments/*-local.rb
 /config/locales/generated/
@@ -22,9 +21,6 @@
 /db/*.sqlite*
 /db/*sql
 /exports/
-Gemfile.lock
-Gemfile.lock2
-Gemfile.lock3
 /log/
 /public/app/
 /public/assets/
