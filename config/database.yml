@@ -23,14 +23,14 @@ development:
     encoding: utf8
     database: canvas_queue_development
     timeout: 5000
-    
+
 production:
   adapter: postgresql
   encoding: utf8
-  database: canvas_production
+  database: db9764
   host: localhost
-  username: canvas
-  password: your_password
+  username: app
+  password: DB_PASSWORD
   timeout: 5000
   queue:
     adapter: postgresql
