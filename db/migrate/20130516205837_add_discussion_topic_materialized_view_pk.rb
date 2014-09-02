@@ -8,7 +8,7 @@ class AddDiscussionTopicMaterializedViewPk < ActiveRecord::Migration
       # by pre-scanning the table, it's all in memory and adding the NOT NULL column constraint becomes really fast
       connection.select_value("SELECT COUNT(*) FROM discussion_topic_materialized_views")
       execute("ALTER TABLE discussion_topic_materialized_views ALTER discussion_topic_id SET NOT NULL")
-      execute("ALTER TABLE discussion_topic_materialized_views ADD CONSTRAINT discussion_topic_materialized_views_pkey PRIMARY KEY USING INDEX index_discussion_topic_materialized_views")
+      # execute("ALTER TABLE discussion_topic_materialized_views ADD CONSTRAINT discussion_topic_materialized_views_pkey PRIMARY KEY USING INDEX index_discussion_topic_materialized_views")
     when 'MySQL', 'Mysql2'
       execute("ALTER TABLE discussion_topic_materialized_views ADD PRIMARY KEY (discussion_topic_id)")
       remove_index :discussion_topic_materialized_views, :name => 'index_discussion_topic_materialized_views'

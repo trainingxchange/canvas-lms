@@ -6,7 +6,7 @@ class AddForeignKeys11 < ActiveRecord::Migration
     add_foreign_key_if_not_exists :submission_comment_participants, :users, delay_validation: true
     add_foreign_key_if_not_exists :submission_comments, :users, column: :author_id, delay_validation: true
     add_foreign_key_if_not_exists :submission_comments, :users, column: :recipient_id, delay_validation: true
-    add_foreign_key_if_not_exists :submissions, :users, delay_validation: true
+    # add_foreign_key_if_not_exists :submissions, :users, delay_validation: true
     add_foreign_key_if_not_exists :user_notes, :users, column: :created_by_id, delay_validation: true
     add_foreign_key_if_not_exists :user_notes, :users, delay_validation: true
     add_foreign_key_if_not_exists :web_conference_participants, :users, delay_validation: true
@@ -22,7 +22,7 @@ class AddForeignKeys11 < ActiveRecord::Migration
     remove_foreign_key_if_exists :submission_comment_participants, :users
     remove_foreign_key_if_exists :submission_comments, column: :author_id
     remove_foreign_key_if_exists :submission_comments, column: :recipient_id
-    remove_foreign_key_if_exists :submissions, :users
+    # remove_foreign_key_if_exists :submissions, :users
     remove_foreign_key_if_exists :user_notes, column: :created_by_id
     remove_foreign_key_if_exists :user_notes, :users
     remove_foreign_key_if_exists :web_conference_participants, :users

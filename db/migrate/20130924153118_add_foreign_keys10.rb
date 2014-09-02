@@ -8,8 +8,8 @@ class AddForeignKeys10 < ActiveRecord::Migration
     add_foreign_key_if_not_exists :page_comments, :users, delay_validation: true
     add_foreign_key_if_not_exists :page_views, :users, column: :real_user_id, delay_validation: true
     add_foreign_key_if_not_exists :page_views, :users, delay_validation: true
-    add_foreign_key_if_not_exists :pseudonyms, :users, delay_validation: true
-    add_foreign_key_if_not_exists :quiz_submissions, :users, delay_validation: true
+    # add_foreign_key_if_not_exists :pseudonyms, :users, delay_validation: true
+    # add_foreign_key_if_not_exists :quiz_submissions, :users, delay_validation: true
     add_foreign_key_if_not_exists :rubric_assessments, :users, column: :assessor_id, delay_validation: true
     add_foreign_key_if_not_exists :rubric_assessments, :users, delay_validation: true
     add_foreign_key_if_not_exists :rubrics, :users, delay_validation: true
@@ -21,8 +21,8 @@ class AddForeignKeys10 < ActiveRecord::Migration
     remove_foreign_key_if_exists :page_comments, :users
     remove_foreign_key_if_exists :page_views, column: :real_user_id
     remove_foreign_key_if_exists :page_views, :users
-    remove_foreign_key_if_exists :pseudonyms, :users
-    remove_foreign_key_if_exists :quiz_submissions, :users
+    # remove_foreign_key_if_exists :pseudonyms, :users
+    # remove_foreign_key_if_exists :quiz_submissions, :users
     remove_foreign_key_if_exists :rubric_assessments, column: :assessor_id
     remove_foreign_key_if_exists :rubric_assessments, :users
     remove_foreign_key_if_exists :rubrics, :users

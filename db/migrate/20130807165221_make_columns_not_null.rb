@@ -220,7 +220,7 @@ class MakeColumnsNotNull < ActiveRecord::Migration
     change_column_null_with_less_locking :submissions, :assignment_id
     change_column_null_with_less_locking :submissions, :user_id
     change_column_null_with_less_locking :submissions, :workflow_state
-    change_column_null_with_less_locking :thumbnails, :size
+    # change_column_null_with_less_locking :thumbnails, :size
     change_column_null_with_less_locking :thumbnails, :content_type
     change_column_null_with_less_locking :thumbnails, :filename
     change_column_null_with_less_locking :user_account_associations, :user_id
@@ -445,7 +445,7 @@ class MakeColumnsNotNull < ActiveRecord::Migration
     change_column_null :submissions, :assignment_id, true
     change_column_null :submissions, :user_id, true
     change_column_null :submissions, :workflow_state, true
-    change_column_null :thumbnails, :size, true
+    # change_column_null :thumbnails, :size, true
     change_column_null :thumbnails, :content_type, true
     change_column_null :thumbnails, :filename, true
     change_column_null :user_account_associations, :user_id, true

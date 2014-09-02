@@ -3,7 +3,7 @@ class AddAssociationToLearningOutcomeResultsIndex < ActiveRecord::Migration
   disable_ddl_transaction!
 
   def self.up
-    rename_index :learning_outcome_results, 'index_learning_outcome_results_association', 'temp_index_learning_outcome'
+    # rename_index :learning_outcome_results, 'index_learning_outcome_results_association', 'temp_index_learning_outcome'
     LearningOutcomeResult.
       select("user_id, content_tag_id, association_id, association_type,
               associated_asset_id, associated_asset_type").

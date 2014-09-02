@@ -8,7 +8,7 @@ class AddForeignKeys9 < ActiveRecord::Migration
     add_foreign_key_if_not_exists :discussion_topics, :users, column: :editor_id, delay_validation: true
     add_foreign_key_if_not_exists :discussion_topics, :users, delay_validation: true
     add_foreign_key_if_not_exists :enrollments, :users, column: :associated_user_id, delay_validation: true
-    add_foreign_key_if_not_exists :enrollments, :users, delay_validation: true
+    # add_foreign_key_if_not_exists :enrollments, :users, delay_validation: true
     add_foreign_key_if_not_exists :external_feed_entries, :users, delay_validation: true
     add_foreign_key_if_not_exists :external_feeds, :users, delay_validation: true
     add_foreign_key_if_not_exists :grading_standards, :users, delay_validation: true
@@ -21,7 +21,7 @@ class AddForeignKeys9 < ActiveRecord::Migration
     remove_foreign_key_if_exists :discussion_topics, column: :editor_id
     remove_foreign_key_if_exists :discussion_topics, :users
     remove_foreign_key_if_exists :enrollments, column: :associated_user_id
-    remove_foreign_key_if_exists :enrollments, :users
+    # remove_foreign_key_if_exists :enrollments, :users
     remove_foreign_key_if_exists :external_feed_entries, :users
     remove_foreign_key_if_exists :external_feeds, :users
     remove_foreign_key_if_exists :grading_standards, :users
