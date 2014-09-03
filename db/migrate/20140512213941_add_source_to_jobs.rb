@@ -6,8 +6,8 @@ class AddSourceToJobs < ActiveRecord::Migration
   end
 
   def self.up
-    add_column :delayed_jobs, :source, :string
-    add_column :failed_jobs, :source, :string
+    # add_column :delayed_jobs, :source, :string
+    # add_column :failed_jobs, :source, :string
   end
 
   def self.down

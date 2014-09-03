@@ -6,7 +6,7 @@ class AddFailedJobsOriginalJobId < ActiveRecord::Migration
   end
 
   def self.up
-    add_column :failed_jobs, :original_job_id, :integer, limit: 8
+    # add_column :failed_jobs, :original_job_id, :integer, limit: 8
   end
 
   def self.down

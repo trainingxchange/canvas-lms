@@ -6,7 +6,7 @@ class DropFailedJobsOriginalId < ActiveRecord::Migration
   end
 
   def self.up
-    remove_column :failed_jobs, :original_id
+    #  remove_column :failed_jobs, :original_id
   end
 
   def self.down
