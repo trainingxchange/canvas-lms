@@ -1,1 +1,1 @@
-RAILS_ENV=production script/delayed_job start
+worker: script/delayed_job start
