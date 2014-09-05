@@ -1,1 +1,1 @@
-worker: script/delayed_job start
+worker: sudo script/delayed_job start
