@@ -1,1 +1,1 @@
-worker: script/delayed_job stop
+worker: script/delayed_job start
